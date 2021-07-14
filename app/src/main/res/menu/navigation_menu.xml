@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/cases"
+        android:icon="@drawable/coronavirus"
+        android:title="Cases"
+        app:showAsAction="always"/>
+
+    <item
+        android:id="@+id/test"
+        android:icon="@drawable/test"
+        android:title="Tests"
+        app:showAsAction="always"/>
+
+    <item
+        android:id="@+id/bed"
+        android:icon="@drawable/bed"
+        android:title="Bed"
+        app:showAsAction="always"/>
+
+
+</menu>

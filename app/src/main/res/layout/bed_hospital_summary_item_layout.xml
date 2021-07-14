@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/white"
+    android:elevation="3dp"
+    android:padding="4dp"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/totalHospital"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="465879"
+            android:textColor="@color/black"
+            android:textSize="36sp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/totalHospitalTxt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Total City Hospitals"
+            android:gravity="end"
+            android:textSize="12sp"/>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/linearLayout1">
+
+        <TextView
+            android:id="@+id/totalUrbanHospital"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="465879"
+            android:textColor="@color/black"
+            android:textSize="36sp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/totalUrbanHospitalTxt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Total Urban Hospitals"
+            android:gravity="end"
+            android:textSize="12sp"/>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/linearLayout2">
+
+        <TextView
+            android:id="@+id/totalRuralHospital"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="465879"
+            android:textColor="@color/black"
+            android:textSize="36sp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/totalRuralHospitalTxt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Total Rural Hospitals"
+            android:gravity="end"
+            android:textSize="12sp"/>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

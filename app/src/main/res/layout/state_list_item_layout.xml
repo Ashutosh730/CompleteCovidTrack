@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp">
+
+    <TextView
+        android:id="@+id/stateNameTxt"
+        android:layout_width="0dp"
+        app:layout_constraintWidth_percent=".40"
+        android:layout_height="wrap_content"
+        android:background="@drawable/basic_background"
+        android:text="State"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:padding="6dp"
+        app:layout_constraintEnd_toStartOf="@+id/confirmedCasesTxt"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/confirmedCasesTxt"
+        android:layout_width="0dp"
+        app:layout_constraintWidth_percent=".15"
+        android:layout_height="wrap_content"
+        android:background="@drawable/basic_background"
+        android:text="C"
+        android:padding="6dp"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toStartOf="@+id/recoveredCasesTxt"
+        app:layout_constraintStart_toEndOf="@+id/stateNameTxt"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/recoveredCasesTxt"
+        android:layout_width="0dp"
+        app:layout_constraintWidth_percent=".15"
+        android:layout_height="wrap_content"
+        android:background="@drawable/basic_background"
+        android:text="R"
+        android:textSize="16sp"
+        android:padding="6dp"
+        app:layout_constraintEnd_toStartOf="@+id/deathTxt"
+        app:layout_constraintStart_toEndOf="@+id/confirmedCasesTxt"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <TextView
+        android:id="@+id/deathTxt"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/basic_background"
+        android:padding="6dp"
+        android:text="D"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/recoveredCasesTxt"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintWidth_percent=".15" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

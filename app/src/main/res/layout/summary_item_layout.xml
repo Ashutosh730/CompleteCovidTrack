@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:elevation="2dp"
+    android:padding="8dp">
+
+    <TextView
+        android:id="@+id/summaryTitleTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="summaryTitle"
+        android:textAllCaps="true"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/currentCaseTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="789"
+        android:textStyle="bold"
+        android:textSize="42sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/summaryTitleTxt" />
+
+    <TextView
+        android:id="@+id/casesIncreaseTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="64"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/statusIcon"
+        app:layout_constraintStart_toEndOf="@+id/statusIcon" />
+
+    <ImageView
+        android:id="@+id/statusIcon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/upward_arrow"
+        android:layout_marginStart="4dp"
+        app:layout_constraintBottom_toBottomOf="@+id/currentCaseTxt"
+        app:layout_constraintStart_toEndOf="@+id/currentCaseTxt" />
+</androidx.constraintlayout.widget.ConstraintLayout>
